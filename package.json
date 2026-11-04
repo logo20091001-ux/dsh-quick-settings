@@ -1,0 +1,48 @@
+{
+  "name": "dsh-quick-settings",
+  "version": "0.1.4",
+  "description": "把设置从头像菜单里解放出来：侧边栏常驻一行「⚙ 设置」，点一下直接打开。 A settings row that lives in the DSH sidebar instead of inside the avatar menu.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "settings",
+    "sidebar",
+    "ui"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["react"]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logo20091001-ux/dsh-quick-settings.git"
+  },
+  "homepage": "https://github.com/logo20091001-ux/dsh-quick-settings#readme",
+  "bugs": {
+    "url": "https://github.com/logo20091001-ux/dsh-quick-settings/issues"
+  },
+  "author": "logo20091001-ux",
+  "license": "MIT"
+}
